@@ -4,6 +4,9 @@ function isValidSudoku(inputArr) {
     var colFlag = new Boolean(9)
     var BlockFlag = new Boolean(9)
     for (var i = 0; i < 9; i++) {
+        //例如 rowFlag[0][8]=true就代表第0行的数字8是存在的
+        //js是弱类型语言 无法直接定义二维数组，只能在定义一维数组后再定义
+        //也就是数组的数组
         rowFlag[i] = new Boolean()
         colFlag[i] = new Boolean()
         BlockFlag[i] = new Boolean()
@@ -15,6 +18,7 @@ function isValidSudoku(inputArr) {
             if (inputArr[i][j] >= '1' && inputArr[i][j] <= 9) {
                 var num = inputArr[i][j] - 1;
                 if (rowFlag[i][num]) {
+                    //使用字符串的模板字面量方式写 更优雅
                     console.log(`row======${i+1}=======${num + 1}`)
                     return false
                 }
