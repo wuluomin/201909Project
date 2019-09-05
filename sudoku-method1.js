@@ -24,6 +24,8 @@ function isValidSudoku(input) {
                 if (blocks[blockId].indexOf(input[i][j]) != -1) { //该小方块存在该元素
                     return false;
                 }
+
+                //  if的判断可简写到一起
                 rows[i].push(input[i][j]);
                 cols[j].push(input[i][j]);
                 blocks[blockId].push(input[i][j]);
