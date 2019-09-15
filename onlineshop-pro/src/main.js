@@ -1,5 +1,6 @@
 /* eslint-disable */
 // eslint-disable-next-line
+//为了解决eslint的啰嗦提示问题，就是新增.eslintignore文件，忽略检查所有的.js和.vue的文件
 // 入口文件
 import Vue from 'vue'
 import App from './App.vue'
