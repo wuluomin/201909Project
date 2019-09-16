@@ -24,6 +24,13 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+//  导入格式化时间的插件
+import moment from 'moment'
+//  定义一个格式化时间的过滤器
+Vue.filter('dateFormat', function(dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+    moment(dataStr).format(pattern);
+})
+
 new Vue({
     render: h => h(App),
     router

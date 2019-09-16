@@ -5,8 +5,11 @@
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="../../assets/images/menu1.png">
 						<div class="mui-media-body">
-							幸福
-							<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+							<h3>幸福</h3>
+							<p class='mui-ellipsis'>
+                                <span>发表时间：2019-01-01 12:00:00</span>
+                                <span>点击：1次</span>
+                            </p>
 						</div>
 					</a>
 				</li>
@@ -14,17 +17,23 @@
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="../../assets/images/menu1.png">
 						<div class="mui-media-body">
-							木屋
-							<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+							<h3>幸福</h3>
+							<p class='mui-ellipsis'>
+                                <span>发表时间：2019-01-01 12:00:00</span>
+                                <span>点击：1次</span>
+                            </p>
 						</div>
 					</a>
 				</li>
-				<li class="mui-table-view-cell mui-media">
+                <li class="mui-table-view-cell mui-media">
 					<a href="javascript:;">
 						<img class="mui-media-object mui-pull-left" src="../../assets/images/menu1.png">
 						<div class="mui-media-body">
-							CBD
-							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+							<h3>幸福</h3>
+							<p class='mui-ellipsis'>
+                                <span>发表时间：2019-01-01 12:00:00</span>
+                                <span>点击：1次</span>
+                            </p>
 						</div>
 					</a>
 				</li>
@@ -38,5 +47,14 @@ export default {
 }
 </script>
 <style scoped>
-
+.mui-table-view li h3{
+    font-size: 14px;
+}
+.mui-table-view li .mui-ellipsis{
+    font-size: 12px;
+    color: #226aff;
+    /* C3 样式 */
+    display: flex;
+    justify-content: space-between;
+}
 </style>
