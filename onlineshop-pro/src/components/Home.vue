@@ -45,7 +45,7 @@ export default {
     
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .mint-swipe{
     height: 200px;
 }
@@ -67,12 +67,12 @@ export default {
 }
 .mui-grid-view.mui-grid-9 .mui-table-view-cell{
 	border:0;
-}
-.mui-grid-view.mui-grid-9 .mui-table-view-cell img{
+	img{
 	width: 60px;
 	height: 60px;
 }
-.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	.mui-media-body{
 	font-size: 13px;
+}
 }
 </style>

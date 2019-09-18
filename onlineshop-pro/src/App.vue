@@ -43,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .app-container{
   padding-top: 40px;
   margin: 0;

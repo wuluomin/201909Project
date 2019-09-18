@@ -39,22 +39,38 @@
 				</li>
 
 			</ul>
+			<comment></comment>
     </div>
 </template>
 <script>
+//	导入公共子组件
+import comment from '../subcomponent/Comment.vue'
+
 export default {
-    
+    data(){
+		return {
+
+		}
+	},
+	methods:{
+
+	},
+	components:{	//	用来注册子组件
+		comment
+	}
 }
 </script>
-<style scoped>
-.mui-table-view li h3{
+<style lang="scss" scoped>
+.mui-table-view li{
+	h3{
     font-size: 14px;
 }
-.mui-table-view li .mui-ellipsis{
+	.mui-ellipsis{
     font-size: 12px;
     color: #226aff;
     /* C3 样式 */
     display: flex;
     justify-content: space-between;
+}
 }
 </style>
